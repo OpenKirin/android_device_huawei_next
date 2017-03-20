@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/huawei/frd/full_frd.mk)
+$(call inherit-product, device/huawei/next/full_next.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -23,13 +23,8 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_frd
-PRODUCT_DEVICE := frd
-PRODUCT_MODEL := HONOR-8
+PRODUCT_NAME := lineage_next
+PRODUCT_DEVICE := next
+PRODUCT_MODEL := MATE-8
 
 PRODUCT_GMS_CLIENTID_BASE := android-huawei
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="HONOR/FRD-L04/HWFRD:7.0/HUAWEIFRD-L04/C567B317:user/release-keys" \
-    PRIVATE_BUILD_DESC="FRD-L04-user 7.0 HUAWEIFRD-L04 C567B317 release-keys" \
-    PRODUCT_NAME=FRD

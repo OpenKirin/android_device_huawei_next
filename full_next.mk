@@ -18,11 +18,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from kiwi device
-$(call inherit-product, device/huawei/frd/device.mk)
+$(call inherit-product, device/huawei/next/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := full_frd
-PRODUCT_DEVICE := frd
-PRODUCT_BRAND := Honor
-PRODUCT_MANUFACTURER := HONOR
-PRODUCT_MODEL := HONOR-8
+PRODUCT_NAME := full_next
+PRODUCT_DEVICE := next
+PRODUCT_BRAND := Huawei
+PRODUCT_MANUFACTURER := HUAWEI
+PRODUCT_MODEL := MATE-8

@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/huawei/frd
+LOCAL_PATH := device/huawei/next
 
 # Platform
 TARGET_BOARD_PLATFORM := hi3650
@@ -40,7 +40,7 @@ TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hi3650,frd,FRD,FRD-L02,FRD-L04,FRD-L09,FRD-L14,FRD-L19
+TARGET_OTA_ASSERT_DEVICE := hi3650,next
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00478000
