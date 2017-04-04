@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 LineageOS
+# Copyright (C) 2017 OpenKirin, OldDroid
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,15 +14,10 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+# Include hi3650 common
+$(call inherit-product, device/hisi/3650-common/device-common.mk)
 
-# Inherit from kiwi device
-$(call inherit-product, device/huawei/next/device.mk)
-
-# Device identifier. This must come after all inclusions
-PRODUCT_NAME := full_next
+PRODUCT_NAME := omni_next
 PRODUCT_DEVICE := next
 PRODUCT_BRAND := Huawei
-PRODUCT_MANUFACTURER := HUAWEI
 PRODUCT_MODEL := MATE-8
